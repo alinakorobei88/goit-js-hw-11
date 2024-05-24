@@ -7,7 +7,7 @@ export function showImages(images) {
     const gallery = document.querySelector('.gallery');
     gallery.innerHTML = images.map(image => 
         `<a href="${image.largeImageURL}" class="gallery_item">
-        <image src="${image.WebformatURL}" alt="${image.tags}" class="gallery_image" />
+        <image src="${image.webformatURL}" alt="${image.tags}" class="gallery_image" />
         <div class="gallery_info">
         <p><b>Likes:</b>${image.likes}</p>
         <p><b>Views:</b>${image.views}</p>
