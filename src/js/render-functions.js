@@ -20,7 +20,7 @@ export function showImages(images) {
             captionsData: 'alt',
             captionsDelay: 250
          });
-         lightbox.regresh();
+         lightbox.refresh();
 }
 
 export function showMessage(message) {
