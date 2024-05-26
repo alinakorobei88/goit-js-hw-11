@@ -37,9 +37,9 @@ export function showMessage(message) {
 }
 
 export function showLoader() {
-    document.querySelector('.loader').classList.add('visible');
+    document.querySelector('.loader').classList.add('hidden');
 }
 
 export function hideLoader() {
-    document.querySelector('.loader').classList.remove('visible');
+    document.querySelector('.loader').classList.remove('hidden');
 }
