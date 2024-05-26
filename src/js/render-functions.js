@@ -37,9 +37,13 @@ export function showMessage(message) {
 }
 
 export function showLoader() {
-    document.querySelector('.div-loader').classList.add('hidden');
+    console.log('Show loader');
+    document.querySelector('.div-loader').classList.remove('hidden');
 }
 
 export function hideLoader() {
-    document.querySelector('.div-loader').classList.remove('hidden');
+    console.log('Hide loader');
+    setTimeout(() => {
+        document.querySelector('.div-loader').classList.add('hidden');
+    }, 500); // Затримка в 500 мілісекунд
 }

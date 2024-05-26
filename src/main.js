@@ -10,6 +10,10 @@ document.querySelector('.search-form').addEventListener('submit', (event) => {
         return;
     }
 
+        // Очищення форми та галереї
+        document.querySelector('.gallery').innerHTML = '';
+        event.target.reset();
+
     showLoader();
 
     fetchImages(query)
