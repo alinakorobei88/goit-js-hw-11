@@ -50,6 +50,10 @@
 .gallery_item {
   width: calc((100% - 48px)/3);
   box-sizing: border-box;
+  height: auto;
+  gap: 0px;
+  border: 1px solid #808080;
+  opacity: 0px;
 }
 
 .gallery_image {
@@ -59,18 +63,17 @@
   margin: 0 auto;
 }
 
-.gallery__info {
-  position: absolute;
+.gallery_info {
+  display: flex;
+  flex-wrap: wrap;
   background: #fff;
   color: #2E2F42;
   width: 100%;
-  text-align: center;
+  text-align: left;
   padding: 10px;
   box-sizing: border-box;
-  display: inline;
   align-items: center;
   justify-content: center;
-  color: red;
 }
 
 button {
@@ -110,6 +113,19 @@ input {
   font-weight: 400;
   line-height: 1.5; 
   letter-spacing: 0.04em;
+}
+
+.gallery-div {
+  padding-top: 32px;
+  background: #fff;
+  color: #2E2F42;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline;
+  align-items: center;
+  justify-content: center;
 }
 
 
