@@ -57,17 +57,22 @@
 .gallery_image {
   width: 100%;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .gallery__info {
   position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  color: white;
+  background: #fff;
+  color: #2E2F42;
   width: 100%;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  color: red;
 }
 
 button {
@@ -94,7 +99,7 @@ input {
   height: 30px;
   border-radius: 8px;
   background-color: #fff;
-  padding: 8px 72px;
+  padding-left: 16px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -108,3 +113,5 @@ input {
   line-height: 1.5; 
   letter-spacing: 0.04em;
 }
+
+
