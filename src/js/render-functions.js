@@ -9,12 +9,21 @@ export function showImages(images) {
         `<a href="${image.largeImageURL}" class="gallery_item">
         <image src="${image.webformatURL}" alt="${image.tags}" class="gallery_image" />
         <div class="gallery_info">
-        <p><b>Likes:</b>${image.likes}</p>
-        <p><b>Views:</b>${image.views}</p>
-        <p><b>Comments:</b>${image.comments}</p>
-        <p><b>Downloads:</b>${image.downloads}</p>
+          <div class="info_labels">
+              <p>Likes</p>
+              <p>Views</p>
+              <p>Comments</p>
+              <p>Downloads</p>
+        </div>
+        <div class="info_values">
+            <p>${image.likes}</p>
+            <p>${image.views}</p>
+            <p>${image.comments}</p>
+            <p>${image.downloads}</p>
+        </div>
         </div>
         </a>`).join('');
+        
          const lightbox = new SimpleLightbox('.gallery a', {
             captions: true,
             captionsData: 'alt',

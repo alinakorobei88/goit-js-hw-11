@@ -39,41 +39,54 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  list-style-type: none;
-  max-width: 1440px;
-  width: 100%;
-  height: auto;
-  padding: 100px 0;
   gap: 24px;
+  padding: 30px 120px;
+  justify-content: center;
 }
 
 .gallery_item {
-  width: calc((100% - 48px)/3);
+  width: calc((100% - 48px) / 3);
   box-sizing: border-box;
   height: auto;
-  gap: 0px;
   border: 1px solid #808080;
-  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery_image {
-  width: 100%;
-  height: auto;
   display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 152px; /* 200px (total height) - 48px (info height) */
+  object-fit: cover;
 }
 
 .gallery_info {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  height: 48px;
+  padding: 5px;
   background: #fff;
   color: #2E2F42;
-  width: 100%;
-  text-align: left;
-  padding: 10px;
   box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  font-size: 14px;
+}
+
+.info_labels, .info_values {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info_labels p, .info_values p {
+  margin: 0;
+  width: 25%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.info_labels {
+  font-weight: bold;
 }
 
 button {
@@ -115,17 +128,6 @@ input {
   letter-spacing: 0.04em;
 }
 
-.gallery-div {
-  padding-top: 32px;
-  background: #fff;
-  color: #2E2F42;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  box-sizing: border-box;
-  display: inline;
-  align-items: center;
-  justify-content: center;
-}
+
 
 
